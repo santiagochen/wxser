@@ -91,7 +91,7 @@ exports = module.exports = {
                 } );
             }
             
-        })
+        }) 
     },
 
     restoreHy : function(){

@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 var program = require('commander');
-var clipboardy = require('clipboardy')
+var clipboardy = require('clipboardy');
 var sniffer = require('./utils/sniffer');
+var pkg = require('./package');
 var inq = require('./utils/inq');
 
 //遍历获取
@@ -51,5 +52,5 @@ program.command('ext <cmd>')
 });
 
 program
-.version('0.0.1')
+.version(pkg.version)
 .parse(process.argv);

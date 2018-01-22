@@ -8,9 +8,9 @@
 
 <view class="columns">
   <view class="column">
-    <!--WXSER|media-->
+    <!--WXSER|progress-->
     <progress percent="40" stroke-width="12" />
-    <!--WXSER|media-->
+    <!--WXSER|progress-->
   </view>
 </view>
 
