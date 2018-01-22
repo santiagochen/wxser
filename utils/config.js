@@ -1,6 +1,6 @@
 exports = module.exports = {
 
-    base : './utils/snippet',
+    base : __dirname+'/snippet',
 
     reg : /<!--WXSER\|(\w)*(\|)?(\w)*-->/g,
 
