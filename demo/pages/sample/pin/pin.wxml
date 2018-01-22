@@ -1,0 +1,34 @@
+
+<view class="section">
+  
+  <!--fixed-->
+
+  <view class="pin center">
+    <view class="has-text-centered is-size-6 has-text-grey">fixed-center-textCenter</view>
+    <view class="has-text-centered is-size-6 has-text-grey">页面高度1200px</view>
+  </view>
+
+  <view class="pin bottom">
+    <view class="has-text-grey is-size-6">fixed-bottom-textCenter</view>
+  </view>
+  
+  <view class="pin top ">
+    <view class="has-text-grey is-size-6">fixed-top-textCenter</view>
+  </view>
+
+  <!--absolute-->
+
+  <view class="pin abs center">
+    <view class="has-text-centered is-size-6 has-text-grey has-text-right">absolute-center-textRight</view>
+  </view>
+
+  <view class="pin abs bottom">
+    <view class="has-text-grey is-size-6 has-text-right">absolute-bottom-textRight</view>
+  </view>
+  
+  <view class="pin abs top ">
+    <view class="has-text-grey is-size-6 has-text-right">absolute-top-textRight</view>
+  </view>
+
+</view>
+

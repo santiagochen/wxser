@@ -1,0 +1,25 @@
+$icon-dimensions: 0.75rem !default
+$icon-dimensions-small: .25rem !default
+$icon-dimensions-large: 1.75rem !default
+
+$icon-dimensions-width: 1.25rem !default
+$icon-dimensions-width-small: 0.75rem !default
+$icon-dimensions-width-large: 1.75rem !default
+
+.icon
+  text-align : center
+  align-items: center
+  display: inline-flex
+  justify-content: center
+  height: $icon-dimensions
+  width: $icon-dimensions-width
+  // Sizes
+  &.is-small
+    height: $icon-dimensions-small
+    width: $icon-dimensions-width-small
+  &.is-medium
+    height: $icon-dimensions
+    width: $icon-dimensions-width
+  &.is-large
+    height: $icon-dimensions-large
+    width: $icon-dimensions-width-large

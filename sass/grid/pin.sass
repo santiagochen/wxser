@@ -1,0 +1,41 @@
+=pin-top
+    left: 0
+    right: 0
+    top: 0
+    bottom: auto
+=pin-center
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    width: 200rpx
+    height: 200rpx
+=pin-bottom
+    left: 0
+    right: 0
+    top: auto
+    bottom: 0
+    
+
+.pin
+    display: block
+    margin: auto
+    width: auto
+    height: auto
+    position: fixed
+    z-index: 99
+    &.top
+        +pin-top
+    &.center
+        +pin-center
+    &.bottom
+        +pin-bottom 
+    &.abs
+        position: absolute
+        &.top
+            +pin-top
+        &.center
+            +pin-center
+        &.bottom
+            +pin-bottom   
+    

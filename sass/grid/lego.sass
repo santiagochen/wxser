@@ -1,0 +1,31 @@
+.lego
+  align-items: stretch
+  display: block
+  flex-basis: 0
+  flex-grow: 1
+  flex-shrink: 1
+  min-height: min-content
+  // Modifiers
+  &.is-ancestor
+    margin-left: -0.75rem
+    margin-right: -0.75rem
+    margin-top: -0.75rem
+    &:last-child
+      margin-bottom: -0.75rem
+    &:not(:last-child)
+      margin-bottom: 0.5rem
+  &.is-child
+    margin: 0 !important
+  &.is-parent
+    padding: 0.5rem
+  &.is-vertical
+    flex-direction: column
+    & > .lego.is-child:not(:last-child)
+      margin-bottom: 0.5rem !important
+  
+  &:not(.is-child)
+    display: flex
+  @for $i from 1 through 12
+    &.is-#{$i}
+      flex: none
+      width: ($i / 12) * 100%

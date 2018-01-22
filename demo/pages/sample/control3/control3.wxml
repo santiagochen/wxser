@@ -1,0 +1,45 @@
+
+<view class="section">
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>1.2 radio(默认)</text></view>
+  </view>
+  <view class="columns"><view class="column field">
+  <radio-group>
+  <radio wx:for="{{items}}" class="" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}   
+  </radio-group>
+  </view></view>
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>1.2 radio(方形)</text></view>
+  </view>
+  <view class="columns"><view class="column field">
+  <radio-group>
+  <radio wx:for="{{items}}" class="radio is-square" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}   
+  </radio-group>
+  </view></view>
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>1.2 radio(方形)+边框(红色)+背景(红色)+选中(白色)</text></view>
+  </view>
+  <view class="columns"><view class="column field">
+  <radio-group>
+  <radio wx:for="{{items}}" class="radio is-square is-border-danger is-bg-danger is-white" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}   
+  </radio-group>
+  </view></view>
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>1.2 radio(圆角)+边框(红色)+背景(红色)+选中(白色)</text></view>
+  </view>
+  <view class="columns"><view class="column field">
+  <radio-group>
+  <radio wx:for="{{items}}" class="radio is-round is-border-danger is-bg-danger is-white" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}   
+  </radio-group>
+  </view></view>
+
+</view>
+

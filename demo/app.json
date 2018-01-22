@@ -1,0 +1,65 @@
+{
+  "pages":["pages/snippet/index/index",
+    "pages/sample/index/index",
+    "pages/about/about",
+    "pages/sample/column/column",
+    "pages/sample/column2/column2",
+    "pages/sample/container/container",
+    "pages/sample/float/float",
+    "pages/sample/lego/lego",
+    "pages/sample/pin/pin",
+    "pages/sample/utility/utility", 
+    "pages/sample/utility1/utility1", 
+    "pages/sample/utility2/utility2", 
+    "pages/sample/control/control",
+    "pages/sample/control1/control1",
+    "pages/sample/control2/control2",
+    "pages/sample/control3/control3",
+    "pages/sample/control4/control4",
+    "pages/sample/control5/control5",
+    "pages/sample/image/image",
+    "pages/sample/audio/audio",
+    "pages/sample/video/video",
+
+    
+    "pages/snippet/accordion/accordion",
+    "pages/snippet/accordions/accordions",
+    "pages/snippet/media/media",
+    "pages/snippet/comment/comment",
+    "pages/snippet/card/card",
+    "pages/snippet/breadcrumb/breadcrumb",
+    "pages/snippet/menu/menu",
+    "pages/snippet/panel/panel",
+    "pages/snippet/tabs/tabs",
+    "pages/snippet/message/message",
+    "pages/snippet/modal/modal",
+    "pages/snippet/notification/notification"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#46c679",
+    "backgroundColor": "#fafbfb",
+    "list": [{
+      "pagePath": "pages/sample/index/index",
+      "iconPath": "image/category.png",
+      "selectedIconPath": "image/category_active.png",
+      "text": "文档"
+    },{
+      "pagePath": "pages/snippet/index/index",
+      "iconPath": "image/copy.png",
+      "selectedIconPath": "image/copy_active.png",
+      "text": "片段"
+    }, {
+      "pagePath": "pages/about/about",
+      "iconPath": "image/about.png",
+      "selectedIconPath": "image/about_active.png",
+      "text": "关于"
+    }]
+  }
+}

@@ -1,0 +1,40 @@
+
+<view class="section">
+  <!--float-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>1.1 float 浮动</text></view>
+  </view>
+  
+  <view class="float has-text-grey is-size-6">
+    <view class="float-left">
+      <view class="float-item">
+        <view class="wrap has-text-centered has-text-grey is-size-6">
+          <text>float-left</text>
+        </view>
+      </view>
+    </view>
+    <view class="float-right">
+      <view class="float-item">
+        <view class="wrap has-text-centered">
+          <text>float-right</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>1.2 float 自动宽度</text></view>
+  </view>
+  
+  <view class="float has-text-grey is-size-6">
+    <block wx:for="{{var_item}}" wx:for-index="idx" wx:for-item="item">
+    <view class="float-item has-text-grey is-size-6">
+      <view class="wrap has-text-centered">
+        <text>{{idx+1}}</text>
+      </view>
+    </view>
+    </block>
+  </view>
+
+</view>
+

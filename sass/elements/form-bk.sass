@@ -1,0 +1,384 @@
+$input-color: $grey-darker !default
+$input-background-color: $white !default
+$input-border-color: $grey-lighter !default
+$input-shadow: inset 0 1px 2px rgba($black, 0.1) !default
+
+$input-hover-color: $grey-darker !default
+/*$input-hover-border-color: $grey-light !default*/
+$input-hover-border-color: $link !default
+
+$input-focus-color: $grey-darker !default
+$input-focus-border-color: $link !default
+
+$input-disabled-color: $text-light !default
+$input-disabled-background-color: $background !default
+$input-disabled-border-color: $background !default
+
+$input-arrow: $link !default
+
+$input-icon-color: $grey-lighter !default
+$input-icon-active-color: $grey !default
+
+$input-radius: $radius !default
+$input-square-radius: $radius-none !default
+$input-round-radius: $radius-huge !default
+
+$textarea-none-radius: $radius-none !default
+
+$checkbox-none-radius: $radius-none !default
+$checkbox-circle-radius: $radius-circle !default
+
+$radio-round-radius: $radius !default
+$radio-none-radius: $radius-none !default
+
+$file-border-color: $border !default
+$file-radius: $radius !default
+
+$file-cta-background-color: $white-ter !default
+$file-cta-color: $grey-dark !default
+$file-cta-hover-color: $grey-darker !default
+$file-cta-active-color: $grey-darker !default
+
+$file-name-border-color: $border !default
+$file-name-border-style: solid !default
+$file-name-border-width: 1px 1px 1px 0 !default
+$file-name-max-width: 16em !default
+
+$label-color: $grey-darker !default
+$label-weight: $weight-bold !default
+
+$help-size: $size-small !default
+
+=input
+  +control
+  background-color: $input-background-color
+  border-color: $input-border-color
+  color: $input-color
+  &:hover,
+  &.is-hovered
+    border-color: $input-hover-border-color
+  &:focus,
+  &.is-focused,
+  &:active,
+  &.is-active
+    border-color: $input-focus-border-color
+  &[disabled]
+    background-color: $input-disabled-background-color
+    border-color: $input-disabled-border-color
+    box-shadow: none
+    color: $input-disabled-color
+    +placeholder
+      color: rgba($input-disabled-color, 0.3)
+
+.input,
+.textarea
+  +input
+  box-shadow: $input-shadow
+  //max-width: 100%
+  //width: 100%
+  &[type="search"]
+    border-radius: 290486px
+  // Colors
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    &.is-#{$name}
+      border-color: $color
+  // Sizes
+  &.is-small
+    +control-small
+  &.is-medium
+    +control-medium
+  &.is-large
+    +control-large
+  &.is-inline
+    display: inline
+    width: auto
+
+.input
+  //border-radius
+  &.is-square
+    border-radius: $input-square-radius
+  &.is-round
+    border-radius: $input-round-radius
+
+.textarea
+  box-sizing: border-box;
+  &.is-square
+    border-radius: $textarea-none-radius
+  width: 100%
+  border: solid 1px #dddssssddsssddssdd
+  display: block
+  max-width: 100%
+  //min-width: 100%
+  padding: 0.625em
+  resize: vertical
+  &:not([rows])
+    max-height: 600px
+    min-height: 120px
+  &[rows]
+    height: unset
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-border-#{$name}
+      border-color: $color
+
+.checkbox,
+.radio
+  cursor: pointer
+  display: inline-block
+  line-height: 1.25
+  position: relative
+  input
+    cursor: pointer
+  &:hover
+    color: $input-hover-color
+  &[disabled]
+    color: $input-disabled-color
+    cursor: not-allowed
+
+checkbox.checkbox 
+  &.is-square
+    & .wx-checkbox-input
+      border-radius: $checkbox-none-radius
+  &.is-circle
+    & .wx-checkbox-input
+      border-radius: $checkbox-circle-radius
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      & .wx-checkbox-input.wx-checkbox-input-checked
+        color: $color !important
+    &.is-border-#{$name}
+      & .wx-checkbox-input
+        border-color: $color
+    &.is-bg-#{$name}
+      & .wx-checkbox-input
+        background-color: $color !important
+
+.radio
+  & + .radio
+    margin-left: 0.5em
+
+radio.radio
+  &.is-round
+    & .wx-radio-input
+      border-radius: $radio-round-radius
+  &.is-square
+    & .wx-radio-input
+      border-radius: $radio-none-radius
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      & .wx-radio-input.wx-radio-input-checked
+        color: $color !important
+    &.is-border-#{$name}
+      & .wx-radio-input
+        border-color: $color !important
+    &.is-bg-#{$name}
+      & .wx-radio-input
+        background-color: $color !important
+
+.label
+  color: $label-color
+  display: block
+  font-size: $size-normal
+  font-weight: $label-weight
+  &:not(:last-child)
+    margin-bottom: 0.5em
+  // Sizes
+  &.is-small
+    font-size: $size-small
+  &.is-medium
+    font-size: $size-medium
+  &.is-large
+    font-size: $size-large
+
+.help
+  display: block
+  font-size: $help-size
+  margin-top: 0.25rem
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    &.is-#{$name}
+      color: $color
+
+// Containers
+
+.field
+  &:not(:last-child)
+    margin-bottom: 0.75rem
+  // Modifiers
+  &.has-addons
+    display: flex
+    justify-content: flex-start
+    .control
+      &:not(:last-child)
+        margin-right: -1px
+      &:first-child
+        .button,
+        .input,
+        .select select
+          border-bottom-left-radius: $input-radius
+          border-top-left-radius: $input-radius
+      &:last-child
+        .button,
+        .input,
+        .select select
+          border-bottom-right-radius: $input-radius
+          border-top-right-radius: $input-radius
+      .button,
+      .input,
+      .select select
+        border-radius: 0
+        &:hover,
+        &.is-hovered
+          z-index: 2
+        &:focus,
+        &.is-focused,
+        &:active,
+        &.is-active
+          z-index: 3
+          &:hover
+            z-index: 4
+      &.is-expanded
+        flex-grow: 1
+    &.has-addons-centered
+      justify-content: center
+    &.has-addons-right
+      justify-content: flex-end
+    &.has-addons-fullwidth
+      .control
+        flex-grow: 1
+        flex-shrink: 0
+  &.is-grouped
+    display: flex
+    justify-content: flex-start
+    & > .control
+      flex-shrink: 0
+      &:not(:last-child)
+        margin-bottom: 0
+        margin-right: 0.75rem
+      &.is-expanded
+        flex-grow: 1
+        flex-shrink: 1
+    &.is-grouped-centered
+      justify-content: center
+    &.is-grouped-right
+      justify-content: flex-end
+    &.is-grouped-multiline
+      flex-wrap: wrap
+      & > .control
+        &:last-child,
+        &:not(:last-child)
+          margin-bottom: 0.75rem
+      &:last-child
+        margin-bottom: -0.75rem
+      &:not(:last-child)
+        margin-bottom: 0
+
+  &.is-horizontal
+    +tablet
+      display: flex
+
+.field-label
+  .label
+    font-size: inherit
+  +mobile
+    margin-bottom: 0.5rem
+  +tablet
+    flex-basis: 0
+    flex-grow: 1
+    flex-shrink: 0
+    margin-right: 1.5rem
+    text-align: right
+    &.is-small
+      font-size: $size-small
+      padding-top: 0.375em
+    &.is-normal
+      padding-top: 0.375em
+    &.is-medium
+      font-size: $size-medium
+      padding-top: 0.375em
+    &.is-large
+      font-size: $size-large
+      padding-top: 0.375em
+
+.field-body
+  .field .field
+    margin-bottom: 0
+  +tablet
+    display: flex
+    flex-basis: 0
+    flex-grow: 5
+    flex-shrink: 1
+    .field
+      margin-bottom: 0
+    & > .field
+      flex-shrink: 1
+      &:not(.is-narrow)
+        flex-grow: 1
+      &:not(:last-child)
+        margin-right: 0.75rem
+
+.control
+  font-size: $size-normal
+  position: relative
+  text-align: left
+  // Modifiers
+  // DEPRECATED
+  &.has-icon
+    .icon
+      color: $input-icon-color
+      height: 2.25em
+      pointer-events: none
+      position: absolute
+      top: 0
+      width: 2.25em
+      z-index: 4
+    &:not(.has-icon-right)
+      .icon
+        left: 0
+      .input
+        padding-left: 2.25em
+    &.has-icon-right
+      .icon
+        right: 0
+      .input
+        padding-right: 2.25em
+  &.has-icons-left,
+  &.has-icons-right
+    .icon
+      color: $input-icon-color
+      height: 2.25em
+      pointer-events: none
+      position: absolute
+      top: 0
+      width: 2.25em
+      z-index: 4
+  &.has-icons-left
+    .input,
+    .select select
+      padding-left: 2.25em
+    .icon.is-left
+      left: 0
+  &.has-icons-right
+    .input,
+    .select select
+      padding-right: 2.25em
+    .icon.is-right
+      right: 0
+  &.is-loading
+    &::after
+      +loader
+      position: absolute !important
+      right: 0.625em
+      top: 0.625em
+    &.is-small:after
+      font-size: $size-small
+    &.is-medium:after
+      font-size: $size-medium
+    &.is-large:after
+      font-size: $size-large

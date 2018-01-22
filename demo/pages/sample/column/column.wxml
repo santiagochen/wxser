@@ -1,0 +1,135 @@
+
+<view class="section">
+
+<view class="columns">
+<view class="column has-text-grey is-size-6"><text>1. 根据column个数平分</text></view>
+</view>
+<block wx:for="{{var_ave}}" wx:for-index="idx" wx:for-item="item">
+<view class="columns">
+<block wx:for="{{item}}" wx:for-index="idx1" wx:for-item="item1">
+<view class="column has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>+</text>
+  </view>
+</view>
+</block>
+</view>
+</block>
+
+<view class="columns">
+<view class="column has-text-grey is-size-6"><text>2. 通过is-{size}指定</text></view>
+</view>
+<block wx:for="{{var_is}}" wx:for-index="idx" wx:for-item="item">
+<view class="columns">
+<view class="column is-{{item}} has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>is-{{item}}</text>
+  </view>
+</view>
+<view class="column has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>+</text>
+  </view>
+</view>
+</view>
+</block>
+
+<view class="columns">
+<view class="column has-text-grey is-size-6"><text>3. 通过几分之几指定 is-{英语的几分之几}</text></view>
+</view>
+
+<view class="columns">
+<view class="column is-three-quarters has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>3/4</text>
+  </view>
+</view>
+<view class="column has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>+</text>
+  </view>
+</view>
+</view>
+
+<view class="columns">
+<view class="column is-two-thirds has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>2/3</text>
+  </view>
+</view>
+<view class="column has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>+</text>
+  </view>
+</view>
+</view>
+
+<view class="columns">
+<view class="column is-half has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>1/2</text>
+  </view>
+</view>
+<view class="column has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>+</text>
+  </view>
+</view>
+</view>
+
+<view class="columns">
+<view class="column is-one-third has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>1/3</text>
+  </view>
+</view>
+<view class="column has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>+</text>
+  </view>
+</view>
+</view>
+
+<view class="columns">
+<view class="column is-one-quarter has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>1/4</text>
+  </view>
+</view>
+<view class="column has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>+</text>
+  </view>
+</view>
+</view>
+
+<view class="columns">
+<view class="column has-text-grey is-size-6"><text>4. 通过给定具体宽度</text></view>
+</view>
+
+<view class="columns">
+<view class="column is-narrow has-text-centered has-text-grey-light is-size-6" style="width:200rpx">
+  <view class="wrap">
+  <text>200rpx</text>
+  </view>
+</view>
+<view class="column has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>+</text>
+  </view>
+</view>
+</view>
+<view class="columns">
+<view class="column is-narrow has-text-centered has-text-grey-light is-size-6" style="width:280rpx">
+  <view class="wrap">
+  <text>280rpx</text>
+  </view>
+</view>
+<view class="column has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>+</text>
+  </view>
+</view>
+</view>
+
+</view>

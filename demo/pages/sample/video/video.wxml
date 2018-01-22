@@ -1,0 +1,29 @@
+
+<view class="section">
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>均在 mode="scaleToFill" 模式下演示</text></view>
+  </view>
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>1.1 Image</text></view>
+  </view>
+  <view class="columns">
+  <view class="column">
+  <video id="myVideo" src="{{src}}" enable-danmu danmu-btn controls danmu-list="{{danmuList}}"></video>
+  </view>
+  </view>
+  <view class="columns">
+  <view class="column">
+  <button class="button" bindtap="bindButtonTap">获取视频</button>
+  </view>
+  <view class="column">
+  <input class="input" bindblur="bindInputBlur"/>
+  </view>
+  <view class="column">
+  <button class="button" bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+  </view>
+
+</view>
+

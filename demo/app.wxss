@@ -1,0 +1,9 @@
+/**app.wxss**/
+@import "utils/wxser.wxss";
+page{
+    background-color:#f8f8f8;
+}
+view.wrap{
+    background-color:#eee;
+    width:100%;
+}

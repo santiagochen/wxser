@@ -1,0 +1,27 @@
+
+<view class="section">
+  
+  <view class="columns">
+  <view class="column has-text-centered has-text-grey is-size-6">
+    <text>* 文本大小 *</text>
+  </view>
+  </view>
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>1 文本大小</text></view>
+  </view>
+  <view class="columns is-multiline">
+  <view class="column is-12">default</view>
+  <view class="column is-12 is-size-1">is-size-1</view>
+  <view class="column is-12 is-size-2">is-size-2</view>
+  <view class="column is-12 is-size-3">is-size-3</view>
+  <view class="column is-12 is-size-4">is-size-4</view>
+  <view class="column is-12 is-size-5">is-size-5</view>
+  <view class="column is-12 is-size-6">is-size-6</view>
+  <view class="column is-12 is-size-7">is-size-7</view>
+  
+  </view>
+ 
+</view>
+

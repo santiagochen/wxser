@@ -1,8 +1,14 @@
-### Wxser 命令行工具
- 
-1. 安装 ： ``` npm install -g wxser  ```
-2. 使用命令 ：
-    - ``` wxser ls ``` 列出所有元素
-    - ``` wxser get <type> ``` 指定查看某类元素的二级类型
-    - ``` wxser ext <type extension> ``` 对二级类型进行搜索，关联列出所有相关元素
+### 微信小程序框架 - Wxser(小程序UI框架)
 
+### 特性
+
+1. 片段快速获取(进行中)
+    - 情景片段
+    - 组件片段
+2. 支持使用font-awesome
+    - 使用 : ``` <text class="fa fa-caret-right"></text> ```
+3. 主题可选(未开始)
+
+### 备注
+1. font-awesome处理
+    - IconFont 转换 Base64, 使用[https://transfonter.org/](https://transfonter.org/)

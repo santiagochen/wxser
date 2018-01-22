@@ -1,0 +1,33 @@
+
+.card
+  align-items: stretch
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding-bottom: 3rem
+  padding-top: 3rem
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      background-color: $color
+      color: $color-invert
+  .card-header
+    border-bottom : solid 1px 
+  .card-header,
+  .card-body,
+  .card-footer
+    padding-bottom: 3rem
+    padding-top: 3rem
+  &.is-medium
+    .card-header,
+    .card-body,
+    .card-footer
+      padding-bottom: 9rem
+      padding-top: 9rem
+  &.is-large
+    .card-header,
+    .card-body,
+    .card-footer
+      padding-bottom: 18rem
+      padding-top: 18rem

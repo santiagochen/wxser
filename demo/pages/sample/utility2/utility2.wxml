@@ -1,0 +1,40 @@
+
+<view class="section">
+  
+  <view class="columns">
+  <view class="column has-text-centered has-text-grey is-size-6">
+    <text>* 主题 *</text>
+  </view>
+  </view>
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>1 主题种类</text></view>
+  </view>
+  <view class="columns is-multiline">
+  <view class="column is-4">is-white</view>
+  <view class="column is-4">is-black</view>
+  <view class="column is-4">is-light</view>
+  <view class="column is-4">is-dark</view>
+  <view class="column is-4">is-primary</view>
+  <view class="column is-4">is-info</view>
+  <view class="column is-4">is-success</view>
+  <view class="column is-4">is-warning</view>
+  <view class="column is-4">is-danger</view>
+  </view>
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>2 主题应用范畴</text></view>
+  </view>
+  <view class="columns is-multiline">
+  <view class="column is-4">Hero 大屏广告</view>
+  <view class="column is-4">Button 按钮</view>
+  <view class="column is-4">Input 输入框</view>
+  <view class="column is-4">Textarea 文本框</view>
+  <view class="column is-4">Checkbox 复选框</view>
+  <view class="column is-4">Radio 选择按钮</view>
+  </view>
+ 
+</view>
+

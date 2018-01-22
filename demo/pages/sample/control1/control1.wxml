@@ -1,0 +1,116 @@
+
+<view class="section">
+  
+  <view class="columns">
+  <view class="column has-text-centered has-text-grey is-size-6">
+    <text>* 原生样式 *</text>
+  </view>
+  </view>
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>1.1 按钮(默认色，警告色，主体色，警告色镂空)</text></view>
+  </view>
+  <view class="columns">
+  <view class="column field">
+    <button>按钮</button>
+  </view>
+  <view class="column field">
+    <button type="warn">按钮</button>
+  </view>
+  <view class="column field">
+    <button type="primary">按钮</button>
+  </view>
+  <view class="column field">
+    <button type="warn" plain="true">按钮</button>
+  </view>
+  
+  </view>
+
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>1.2 按钮(小尺寸，loading，失效状态)</text></view>
+  </view>
+  <view class="columns">
+  <view class="column field">
+    <button size="mini">按钮</button>
+  </view>
+  <view class="column field">
+    <button loading="true">按钮</button>
+  </view>
+  <view class="column field">
+    <button disabled="true">按钮</button>
+  </view>
+  </view>
+
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-centered has-text-grey is-size-6">
+  </view>
+  </view>
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-centered has-text-grey is-size-6">
+    <text>* 附加使用了Wxser样式 .button*</text>
+  </view>
+  </view>
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>2.1 按钮(颜色)</text></view>
+  </view>
+  <view class="columns">
+  <view class="column field">
+    <button class="button">按钮</button>
+  </view>
+  <view class="column field">
+    <button class="button is-primary">按钮</button>
+  </view>
+  <view class="column field">
+    <button class="button is-info">按钮</button>
+  </view>
+  <view class="column field">
+    <button class="button is-danger">按钮</button>
+  </view>
+  <view class="column field">
+    <button class="button is-warning">按钮</button>
+  </view>
+  </view>
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>2.2 按钮(尺寸)</text></view>
+  </view>
+  <view class="columns">
+  <view class="column field">
+    <button class="button is-small">按钮</button>
+  </view>
+  <view class="column field">
+    <button class="button">按钮</button>
+  </view>
+  <view class="column field">
+    <button class="button is-large">按钮</button>
+  </view>
+  </view>
+
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>2.3 按钮(方形,小圆角,大圆角)</text></view>
+  </view>
+  <view class="columns">
+  <view class="column field">
+    <button class="button is-square">按钮</button>
+  </view>
+  <view class="column field">
+    <button class="button">按钮</button>
+  </view>
+  <view class="column field">
+    <button class="button is-round">按钮</button>
+  </view>
+  </view>
+ 
+</view>
+

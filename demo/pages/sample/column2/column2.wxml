@@ -1,0 +1,79 @@
+
+<view class="section">
+<!--is-offset-{size}-->
+<view class="columns">
+<view class="column has-text-grey is-size-6"><text>1. 设定偏移值 is-offset-{size}</text></view>
+</view>
+<block wx:for="{{var_offset}}" wx:for-index="idx" wx:for-item="item">
+<view class="columns">
+<view class="column is-6 is-offset-{{item}} has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>is-6 is-offset-{{item}}</text>
+  </view>
+</view>
+</view>
+</block>
+<!--is-centered-->
+<view class="columns">
+<view class="column has-text-grey is-size-6"><text>2. 居中 is-centered</text></view>
+</view>
+<block wx:for="{{var_center}}" wx:for-index="idx" wx:for-item="item">
+<view class="columns is-centered">
+<view class="column is-{{item}} has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>is-{{item}} 居中</text>
+  </view>
+</view>
+</view>
+</block>
+<!--gapless-->
+<view class="columns">
+<view class="column has-text-grey is-size-6"><text>3. 取消间隔 is-gapless</text></view>
+</view>
+<view class="columns is-gapless">
+<block wx:for="{{var_gapless}}" wx:for-index="idx" wx:for-item="item">
+<view class="column is-4 has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap" style='background-color:{{item.color}}'>
+  <text>is-4</text>
+  </view>
+</view>
+</block>
+</view>
+<view class="columns">
+<view class="column has-text-grey is-size-6"><text>(参考): 未取消间隔时</text></view>
+</view>
+<view class="columns">
+<block wx:for="{{var_gapless}}" wx:for-index="idx" wx:for-item="item">
+<view class="column is-4 has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap" style='background-color:{{item.color}}'>
+  <text>is-4</text>
+  </view>
+</view>
+</block>
+</view>
+<!--multiline-->
+<view class="columns">
+<view class="column has-text-grey is-size-6"><text>4. 自动换行 is-multiline</text></view>
+</view>
+<view class="columns is-multiline">
+<block wx:for="{{var_multi}}" wx:for-index="idx" wx:for-item="item">
+<view class="column is-4 has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>is-4</text>
+  </view>
+</view>
+</block>
+</view>
+<view class="columns">
+<view class="column has-text-grey is-size-6"><text>(参考)：不自动换行时</text></view>
+</view>
+<view class="columns">
+<block wx:for="{{var_multi}}" wx:for-index="idx" wx:for-item="item">
+<view class="column is-4 has-text-centered has-text-grey-light is-size-6">
+  <view class="wrap">
+  <text>is-4</text>
+  </view>
+</view>
+</block>
+</view>
+</view>

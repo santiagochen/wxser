@@ -1,0 +1,62 @@
+$dimensions: 16 24 32 48 64 96 128 !default
+
+
+
+.image
+  display: block
+  position: relative
+
+  box-sizing: border-box
+  //height: auto
+  width: 100%
+  border-radius: .25rem
+  &.is-square
+    border-radius: 0
+  &.is-circle
+    border-radius: 100% !important
+  &.is-thumbnail
+    padding: .25rem
+    background-color: #fff
+    border: 1px solid #ddd
+
+  image
+    box-sizing: border-box
+    display: block
+    //height: auto
+    width: 100%
+    border-radius: .25rem
+    &.is-square
+      border-radius: 0 !important
+    &.is-circle
+      border-radius: 100% !important
+    &.is-thumbnail
+      padding: .25rem
+      background-color: #fff
+      border: 1px solid #ddd
+  // Ratio
+  &.is-1by1,
+  &.is-4by3,
+  &.is-3by2,
+  &.is-16by9,
+  &.is-2by1
+    image
+      +overlay
+      box-sizing: border-box
+      height: 100%
+      width: 100%
+      border-radius: .25rem        
+  &.is-1by1
+    padding-top: 100%
+  &.is-4by3
+    padding-top: 75%
+  &.is-3by2
+    padding-top: 66.6666%
+  &.is-16by9
+    padding-top: 56.25%
+  &.is-2by1
+    padding-top: 50%
+  // Sizes
+  @each $dimension in $dimensions
+    &.is-#{$dimension}x#{$dimension}
+      height: $dimension * 1px
+      width: $dimension * 1px

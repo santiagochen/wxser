@@ -1,0 +1,50 @@
+<!--section-->
+<view class="section">
+  <view class="columns">
+  <view class="column has-text-grey is-size-6 has-text-centered"><text>1. section</text></view>
+  </view>
+  <view class="wrap is-size-6 has-text-grey-light"><text>section</text></view>
+</view>
+
+<!--hero-->
+<view class="hero">
+  <view class="hero-body">
+  <view class="columns">
+  <view class="column has-text-grey is-size-6 has-text-centered"><text>2. hero</text></view>
+  </view>
+  <view class="columns is-size-6 has-text-grey-light ">
+    <view class="column wrap"><text>hero默认主题</text></view>
+  </view>
+  </view>
+</view>
+
+<view class="hero is-danger">
+  <view class="hero-body">
+  <view class="columns">
+  <view class="column has-text-white-bis is-size-6"><text>hero主题: is-{theme}</text></view>
+  </view>
+  <view class="columns is-size-6 has-text-white-bis">
+    <view class="column"><text>primary(info,success,warning,danger,light,dark)</text></view>
+  </view>
+  </view>
+</view>
+
+<view class="section"></view>
+
+<!--container-->
+<view class="container">
+  <view class="columns">
+  <view class="column has-text-grey is-size-6 has-text-centered"><text>3. container</text></view>
+  </view>
+  <view class="wrap is-size-6 has-text-grey-light "><text>container</text></view>
+</view>
+
+<view class="section"></view>
+
+<!--footer-->
+<view class="footer">
+  <view class="columns">
+  <view class="column has-text-grey is-size-6 has-text-centered"><text>4. footer</text></view>
+  </view>
+  <view class="wrap is-size-6 has-text-grey-light "><text>footer</text></view>
+</view>

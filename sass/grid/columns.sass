@@ -1,0 +1,146 @@
+.column
+  display: block
+  flex-basis: 0
+  flex-grow: 1
+  flex-shrink: 1
+  padding: 0.25rem;
+  overflow : hidden;
+  .columns
+    overflow : hidden;
+    &.is-round
+      border-radius : $radius-small;
+    &.wrap
+      padding: 0;
+      margin: .25rem 0;
+      overflow : hidden;
+      display : none;
+    &.wrap.active
+      display : flex;
+
+  .columns > &.is-narrow
+    flex: none  
+    overflow : hidden
+  .columns > &.is-full
+    flex: none
+    width: 100%
+    overflow : hidden
+  .columns > &.is-three-quarters
+    flex: none
+    width: 75%
+    overflow : hidden
+  .columns > &.is-two-thirds
+    flex: none
+    width: 66.6666%
+    overflow : hidden
+  .columns > &.is-half
+    flex: none
+    width: 50%
+    overflow : hidden
+  .columns > &.is-one-third
+    flex: none
+    width: 33.3333%
+    overflow : hidden
+  .columns > &.is-one-quarter
+    flex: none
+    width: 25%
+    overflow : hidden
+  .columns > &.is-offset-three-quarters
+    margin-left: 75%
+    overflow : hidden
+  .columns > &.is-offset-two-thirds
+    margin-left: 66.6666%
+    overflow : hidden
+  .columns > &.is-offset-half
+    margin-left: 50%
+    overflow : hidden
+  .columns > &.is-offset-one-third
+    margin-left: 33.3333%
+    overflow : hidden
+  .columns > &.is-offset-one-quarter
+    margin-left: 25%
+    overflow : hidden
+  @for $i from 1 through 12
+    .columns > &.is-#{$i}
+      overflow : hidden
+      flex: none
+      width: ($i / 12) * 100%
+    .columns > &.is-offset-#{$i}
+      margin-left: ($i / 12) * 100%    
+      overflow : hidden
+.columns
+  display: flex
+  margin-left: -0.75rem
+  margin-right: -0.75rem
+  margin-top: -0.75rem
+  overflow : hidden
+  &:last-child
+    margin-bottom: -0.75rem
+  &:not(:last-child)
+    margin-bottom: 1rem
+  // Modifiers
+  &.is-centered
+    justify-content: center
+  &.is-gapless
+    margin-left: 0
+    margin-right: 0
+    margin-top: 0
+    &:last-child
+      margin-bottom: 0
+    &:not(:last-child)
+      margin-bottom: 1rem
+    & > .column
+      margin: 0
+      padding: 0
+  &.is-multiline
+    flex-wrap: wrap
+  &.is-vcentered
+    align-items: center
+  &.is-round
+    border-radius : $radius-small;
+  &.wrap
+    padding: 0;
+    margin: .25rem 0;
+    overflow : hidden;
+    display : none;
+  &.wrap.active
+    display : flex;
+
+.columns.is-variable
+  &.wrap
+    padding: 0;
+    margin: .25rem 0;
+    overflow : hidden;
+    display : none;
+  &.wrap.active
+    display : flex;
+  overflow : hidden;
+  --columnGap: 0.75rem
+  margin-left: calc(-1 * var(--columnGap))
+  margin-right: calc(-1 * var(--columnGap))
+  .column
+    overflow : hidden
+    padding-left: var(--columnGap)
+    padding-right: var(--columnGap)
+  @for $i from 0 through 8
+    &.is-#{$i}
+      --columnGap: $i * 0.25rem
+
+.columns.is-variable-vertical
+  &.wrap
+    padding: 0;
+    margin: .25rem 0;
+    overflow : hidden;
+    display : none;
+  &.wrap.active
+    display : flex;
+  overflow : hidden
+  --columnGap: 0.75rem
+  margin-top: calc(.3 * var(--columnGap))
+  margin-bottom: calc(.3 * var(--columnGap))
+  .column
+    overflow : hidden;
+    padding-top: var(--columnGap)
+    padding-bottom: var(--columnGap)
+  @for $i from 0 through 8
+    &.is-#{$i}
+      --columnGap: $i * 0.25rem

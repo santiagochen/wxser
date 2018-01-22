@@ -1,0 +1,15 @@
+
+<view class="section">
+  
+  <!--separator-->
+  <view class="columns">
+  <view class="column has-text-grey is-size-6"><text>1.1 Image</text></view>
+  </view>
+  <view class="columns">
+  <view class="column">
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls="false" loop></audio>
+  </view>
+  </view>
+
+</view>
+
