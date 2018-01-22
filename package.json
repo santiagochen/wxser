@@ -14,7 +14,7 @@
     "cli",
     "wxser"
   ],
-  "author": "diegochen",
+  "author": "santiagochen",
   "license": "MIT",
   "dependencies": {
     "clipboardy": "^1.2.2",
