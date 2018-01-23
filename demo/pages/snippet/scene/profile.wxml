@@ -1,3 +1,6 @@
+
+<!--WXSER|scene|profile-->
+
 <view class="pin top">
 
 <view class="section">
@@ -20,7 +23,7 @@
   <view class="columns is-centered">
     <view class="column is-2">
       <view class="image is-1by1">
-        <image src="../../image/wxser-head.jpg" class="is-circle" style="width:100%;" mode="scaleToFill"></image>
+        <image src="../../../image/wxser-head.jpg" class="is-circle" style="width:100%;" mode="scaleToFill"></image>
       </view>
     </view>
   </view>
@@ -45,7 +48,7 @@
     <view class="columns">
       <view class="column is-2">
         <view class="image is-1by1">
-          <image src="../../image/wxser-head.jpg" class="is-thumbnail" style="width:100%;" mode="scaleToFill"></image>
+          <image src="../../../image/wxser-head.jpg" class="is-thumbnail" style="width:100%;" mode="scaleToFill"></image>
         </view>
       </view>
       <view class="column is-10 is-size-6 has-text-grey">
@@ -54,5 +57,13 @@
     </view>
     </block>
 </view>
+
+
+
+
+<!--WXSER|scene|profile-->
+
+
+
 
 

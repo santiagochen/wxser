@@ -12,15 +12,15 @@
   <view class="column has-text-grey is-size-6"><text>1 主题种类</text></view>
   </view>
   <view class="columns is-multiline">
-  <view class="column is-4">is-white</view>
-  <view class="column is-4">is-black</view>
-  <view class="column is-4">is-light</view>
-  <view class="column is-4">is-dark</view>
-  <view class="column is-4">is-primary</view>
-  <view class="column is-4">is-info</view>
-  <view class="column is-4">is-success</view>
-  <view class="column is-4">is-warning</view>
-  <view class="column is-4">is-danger</view>
+  <view class="column is-4 has-text-white">is-white</view>
+  <view class="column is-4 has-text-black">is-black</view>
+  <view class="column is-4 has-text-light">is-light</view>
+  <view class="column is-4 has-text-dark">is-dark</view>
+  <view class="column is-4 has-text-primary">is-primary</view>
+  <view class="column is-4 has-text-info">is-info</view>
+  <view class="column is-4 has-text-success">is-success</view>
+  <view class="column is-4 has-text-warning">is-warning</view>
+  <view class="column is-4 has-text-danger">is-danger</view>
   </view>
 
   <!--separator-->

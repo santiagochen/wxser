@@ -33,7 +33,8 @@
     "pages/snippet/tabs/tabs",
     "pages/snippet/message/message",
     "pages/snippet/modal/modal",
-    "pages/snippet/notification/notification"
+    "pages/snippet/notification/notification",
+    "pages/snippet/scene/profile"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -3,8 +3,8 @@
 <view class="section"> 
 
 <view class="columns is-vcentered">
-  <view class="column is-5"><image src="../../../image/wxser-profile.png" class="image is-thumbnail" mode="aspectFit"/></view>
-  <view class="column is-7 ">
+  <view class="column is-5"><image src="../../../image/sample.jpg" class="image" mode="aspectFit"/></view>
+  <view class="column is-12 ">
     
       <view class="is-12 is-size-4 has-text-gray"><text>Wxser</text></view>
       <view class="is-12 is-size-6 has-text-gray"><text>轻量级的小程序布局框架</text></view>
