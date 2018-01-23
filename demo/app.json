@@ -1,7 +1,6 @@
 {
-  "pages":["pages/snippet/index/index",
+  "pages":["pages/about/about","pages/snippet/index/index",
     "pages/sample/index/index",
-    "pages/about/about",
     "pages/sample/column/column",
     "pages/sample/column2/column2",
     "pages/sample/container/container",
@@ -34,7 +33,8 @@
     "pages/snippet/message/message",
     "pages/snippet/modal/modal",
     "pages/snippet/notification/notification",
-    "pages/snippet/scene/profile"
+    "pages/snippet/scene/profile",
+    "pages/snippet/scene/form"
   ],
   "window":{
     "backgroundTextStyle":"light",

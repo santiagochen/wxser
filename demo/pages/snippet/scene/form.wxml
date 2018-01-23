@@ -1,4 +1,5 @@
 
+<!--WXSER|scene|form-->
 
 <view class="pin top">
 
@@ -56,6 +57,12 @@
     </view>
     </block>
 </view>
+
+
+
+
+<!--WXSER|scene|form-->
+
 
 
 
