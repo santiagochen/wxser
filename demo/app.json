@@ -1,5 +1,5 @@
 {
-  "pages":["pages/about/about","pages/snippet/index/index",
+  "pages":["pages/snippet/index/index",
     "pages/sample/index/index",
     "pages/sample/column/column",
     "pages/sample/column2/column2",
@@ -20,7 +20,18 @@
     "pages/sample/audio/audio",
     "pages/sample/video/video",
 
+    "pages/about/about",
     
+    "pages/snippet/section/section",
+    "pages/snippet/container/container",
+    "pages/snippet/columns/columns",
+    "pages/snippet/column/column",
+    "pages/snippet/icon/icon",
+    "pages/snippet/hero/hero",
+    "pages/snippet/footer/footer",
+    "pages/snippet/float/float",
+    "pages/snippet/lego/lego",
+
     "pages/snippet/accordion/accordion",
     "pages/snippet/accordions/accordions",
     "pages/snippet/media/media",
