@@ -2488,7 +2488,7 @@ a.has-text-danger:hover, a.has-text-danger:focus { color: #ff0537 !important; }
 
 .footer { background-color: whitesmoke; padding: 1rem; }
 
-.button { -moz-appearance: none; -webkit-appearance: none; align-items: center; border: 1px solid transparent; border-radius: 3px; box-shadow: none; display: inline-flex; font-size: 0.75rem; height: 2.25em; justify-content: flex-start; line-height: 1.5; /*padding-bottom: $control-padding-vertical*/ padding-left: calc(0.625em - 1px); padding-right: calc(0.625em - 1px); /*padding-top: $control-padding-vertical*/ position: relative; vertical-align: top; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-color: white; border-color: #dbdbdb; color: #363636; cursor: pointer; justify-content: center; padding-left: 0.75em; padding-right: 0.75em; text-align: center; white-space: nowrap; }
+.button { -moz-appearance: none; -webkit-appearance: none; align-items: center; border: 1px solid transparent; border-radius: 3px; box-shadow: none; display: inline-flex; font-size: 0.75rem; height: 2.25em; justify-content: flex-start; line-height: 1.5; /*padding-bottom: $control-padding-vertical*/ padding-left: calc(0.625em - 1px); padding-right: calc(0.625em - 1px); /*padding-top: $control-padding-vertical*/ position: relative; vertical-align: top; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-color: white; border-color: #dbdbdb; border-width: 0em; color: #363636; cursor: pointer; justify-content: center; padding-left: 0.75em; padding-right: 0.75em; text-align: center; white-space: nowrap; }
 
 .button:focus, .button.is-focused, .button:active, .button.is-active { outline: none; }
 
@@ -2862,7 +2862,11 @@ a.has-text-danger:hover, a.has-text-danger:focus { color: #ff0537 !important; }
 
 .button.is-square { border-radius: 0px; }
 
+.button.is-square:after { border-radius: 0px; }
+
 .button.is-round { border-radius: 50px; }
+
+.button.is-round:after { border-radius: 50px; }
 
 .button.is-small { border-radius: 2px; font-size: 0.5rem; }
 

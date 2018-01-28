@@ -43,6 +43,7 @@ $button-static-border-color: $grey-lighter !default
   +unselectable
   background-color: $button-background-color
   border-color: $button-border-color
+  border-width: 0em
   color: $button-color
   cursor: pointer
   justify-content: center
@@ -176,8 +177,12 @@ $button-static-border-color: $grey-lighter !default
   //border-radius
   &.is-square
     border-radius: $button-square-radius
+    &:after
+      border-radius: $button-square-radius
   &.is-round
     border-radius: $button-round-radius
+    &:after
+      border-radius: $button-round-radius
   // Sizes
   &.is-small
     +button-small
