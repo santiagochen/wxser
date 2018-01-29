@@ -21,6 +21,7 @@ Page({
       {name : "表单 | picker", url : "../control5/control5"},
       {name : "表单 | radio", url : "../control3/control3"},
       {name : "表单 | textarea", url : "../control4/control4"},
+      {name : "组件 | tag", url : "../tag/tag"},
       {name : "组件 | image", url : "../image/image"},
       {name : "组件 | audio", url : "../audio/audio"},
       {name : "组件 | video", url : "../video/video"}

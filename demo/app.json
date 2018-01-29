@@ -16,6 +16,7 @@
     "pages/sample/control3/control3",
     "pages/sample/control4/control4",
     "pages/sample/control5/control5",
+    "pages/sample/tag/tag",
     "pages/sample/image/image",
     "pages/sample/audio/audio",
     "pages/sample/video/video",
@@ -31,6 +32,11 @@
     "pages/snippet/footer/footer",
     "pages/snippet/float/float",
     "pages/snippet/lego/lego",
+    "pages/snippet/image/image",
+    "pages/snippet/input/input",
+    "pages/snippet/button/button",
+    "pages/snippet/textarea/textarea",
+    "pages/snippet/tag/tag",
 
     "pages/snippet/accordion/accordion",
     "pages/snippet/accordions/accordions",
@@ -45,7 +51,8 @@
     "pages/snippet/modal/modal",
     "pages/snippet/notification/notification",
     "pages/snippet/scene/profile",
-    "pages/snippet/scene/form"
+    "pages/snippet/scene/form",
+    "pages/snippet/scene/contact"
   ],
   "window":{
     "backgroundTextStyle":"light",
