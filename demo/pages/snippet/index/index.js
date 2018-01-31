@@ -31,6 +31,8 @@ Page({
       {name : "基础 | Image", url : "../image/image"},
       {name : "基础 | Button", url : "../button/button"},
       {name : "基础 | Input", url : "../input/input"},
+      {name : "基础 | Checkbox", url : "../checkbox/checkbox"},
+      {name : "基础 | Radio", url : "../radio/radio"},
       {name : "基础 | Textarea", url : "../textarea/textarea"},
 
       {name : "基础 | Footer", url : "../footer/footer"},
