@@ -32,6 +32,7 @@
     "pages/snippet/footer/footer",
     "pages/snippet/float/float",
     "pages/snippet/lego/lego",
+    "pages/snippet/pin/pin",
     "pages/snippet/image/image",
     "pages/snippet/input/input",
     "pages/snippet/button/button",
