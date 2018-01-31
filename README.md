@@ -1,6 +1,6 @@
 ### 微信小程序框架 - Wxser(小程序UI框架)
-
-1. 框架文档
+1. [使用方法](https://www.npmjs.com/package/wxser)
+2. 框架文档
     - 基础
         - 文本对齐方式
             ``` has-text-left, has-text-centered, has-text-right ```
@@ -180,7 +180,7 @@
             - tag
 
 
-2. 备注 
+3. 备注 
     - font-awesome处理
         - IconFont 转换 Base64, 使用[https://transfonter.org/](https://transfonter.org/)
         - 修改_path.scss
