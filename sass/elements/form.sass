@@ -21,6 +21,8 @@ $input-icon-color: $grey-lighter !default
 $input-icon-active-color: $grey !default
 
 $input-radius: $radius !default
+$input-square-radius: $radius-none !default
+$input-round-radius: $radius-huge !default
 
 $file-border-color: $border !default
 $file-radius: $radius !default
@@ -103,6 +105,10 @@ $help-size: $size-small !default
     border-radius: $radius-rounded
     padding-left: 1em
     padding-right: 1em
+  &.is-square
+    border-radius: $input-square-radius
+  &.is-round
+    border-radius: $radius-rounded
   &.is-static
     background-color: transparent
     border-color: transparent

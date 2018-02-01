@@ -51,7 +51,8 @@
     "pages/snippet/notification/notification",
     "pages/snippet/scene/profile",
     "pages/snippet/scene/form",
-    "pages/snippet/scene/contact"
+    "pages/snippet/scene/contact",
+    "pages/snippet/scene/shop"
   ],
   "window":{
     "backgroundTextStyle":"light",

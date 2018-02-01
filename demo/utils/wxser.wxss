@@ -2996,6 +2996,10 @@ a.has-text-danger:hover, a.has-text-danger:focus { color: #ff0537 !important; }
 
 .input.is-rounded { border-radius: 290486px; padding-left: 1em; padding-right: 1em; }
 
+.input.is-square { border-radius: 0px; }
+
+.input.is-round { border-radius: 290486px; }
+
 .input.is-static { background-color: transparent; border-color: transparent; box-shadow: none; padding-left: 0; padding-right: 0; }
 
 .textarea { display: block; max-width: 100%; min-width: 100%; padding: 0.625em; resize: vertical; }
