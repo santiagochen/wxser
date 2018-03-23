@@ -1,0 +1,41 @@
+$m-base-size: 0.25rem
+$p-base-size: 0.25rem
+@for $i from 0 through 8
+    .m-#{$i}
+        margin-top : $i * $m-base-size !important
+        margin-right : $i * $m-base-size !important
+        margin-bottom : $i * $m-base-size !important
+        margin-left : $i * $m-base-size !important
+    .mx-#{$i}
+        margin-left : $i * $m-base-size !important
+        margin-right : $i * $m-base-size !important
+    .my-#{$i}
+        margin-top : $i * $m-base-size !important
+        margin-bottom : $i * $m-base-size !important
+    .mt-#{$i}
+        margin-top : $i * $m-base-size !important
+    .mr-#{$i}
+        margin-right : $i * $m-base-size !important
+    .mb-#{$i}
+        margin-bottom : $i * $m-base-size !important
+    .ml-#{$i}
+        margin-left : $i * $m-base-size !important
+    .p-#{$i}
+        padding-top : $i * $p-base-size !important
+        padding-right : $i * $p-base-size !important
+        padding-bottom : $i * $p-base-size !important
+        padding-left : $i * $p-base-size !important
+    .px-#{$i}
+        padding-left : $i * $p-base-size !important
+        padding-right : $i * $p-base-size !important
+    .py-#{$i}
+        padding-top : $i * $p-base-size !important
+        padding-bottom : $i * $p-base-size !important
+    .pt-#{$i}
+        padding-top : $i * $p-base-size !important
+    .pr-#{$i}
+        padding-right : $i * $p-base-size !important
+    .pb-#{$i}
+        padding-bottom : $i * $p-base-size !important
+    .pl-#{$i}
+        padding-left : $i * $p-base-size !important
