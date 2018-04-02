@@ -43,12 +43,11 @@ $button-static-border-color: $grey-lighter !default
   +unselectable
   background-color: $button-background-color
   border-color: $button-border-color
-  border-width: 0em
   color: $button-color
   cursor: pointer
   justify-content: center
-  padding-left: 0.75em
-  padding-right: 0.75em
+  padding-left: 12rpx
+  padding-right: 12rpx
   text-align: center
   white-space: nowrap
   strong
@@ -58,8 +57,8 @@ $button-static-border-color: $grey-lighter !default
     &.is-small,
     &.is-medium,
     &.is-large
-      height: 1.5em
-      width: 1.5em
+      height: 24rpx
+      width: 24rpx
     &:first-child:not(:last-child)
       margin-left: calc(-0.375em - 1px)
       margin-right: 0.1875em
@@ -70,6 +69,8 @@ $button-static-border-color: $grey-lighter !default
       margin-left: calc(-0.375em - 1px)
       margin-right: calc(-0.375em - 1px)
   // States
+  &:after
+    border: none
   &:hover,
   &.is-hovered
     border-color: $button-hover-border-color
