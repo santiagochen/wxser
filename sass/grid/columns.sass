@@ -5,6 +5,8 @@
   flex-shrink: 1
   padding: 0.25rem;
   overflow : hidden;
+  &.ellipsis
+    text-overflow: ellipsis
   .columns
     overflow : hidden;
     &.is-round
@@ -91,6 +93,8 @@
     & > .column
       margin: 0
       padding: 0
+      &.ellipsis
+        text-overflow: ellipsis
   &.is-multiline
     flex-wrap: wrap
   &.is-vcentered
@@ -121,6 +125,8 @@
     overflow : hidden
     padding-left: var(--columnGap)
     padding-right: var(--columnGap)
+    &.ellipsis
+      text-overflow: ellipsis
   @for $i from 0 through 8
     &.is-#{$i}
       --columnGap: $i * 0.25rem
@@ -141,6 +147,8 @@
     overflow : hidden;
     padding-top: var(--columnGap)
     padding-bottom: var(--columnGap)
+    &.ellipsis
+      text-overflow: ellipsis
   @for $i from 0 through 8
     &.is-#{$i}
       --columnGap: $i * 0.25rem
